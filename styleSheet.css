@@ -1,0 +1,40 @@
+.menuBar {
+    background-color: white;
+    display: inline;
+    float: right;
+    margin-right: 100px;
+    margin-top: 37px;
+    z-index: 2;
+    transition: all .2s;
+}
+.menuBar li {
+    display: inline-block;
+    padding:0px;
+    list-style: none;
+    position: relative;
+    margin-left: 20px;
+    transition: all .2s;
+}
+.menuBar li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    display: block;
+    transition: all .2s;
+}
+.subMenu {
+    z-index: 2;
+    display: none;
+    padding: 0;
+    position: absolute;
+    transition: all .2s;
+}
+.menuBar li:hover .subMenu {
+    display: block;
+    width: 210px;
+    border: 2px solid white;
+    border-radius: 2px;
+    box-shadow: 0 0 5px grey;
+    padding: 20px;
+    background-color: white;
+}
