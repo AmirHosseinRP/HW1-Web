@@ -1,7 +1,11 @@
-@media screen and (min-width: 650px){
+@media screen and (min-width: 700px){
     body {
         background-color: #f4ede5;
         font-family: Calibri, serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
     a {
@@ -10,9 +14,12 @@
 
     .header {
         background-color: white;
-        margin: 10px;
+        display: flex;
         margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
         height: 50px;
+        justify-content: space-between;
     }
 
     .barBtn {
@@ -39,26 +46,19 @@
     }
 
     .menuBar {
-        display: inline;
+        display: flex;
         position: relative;
-        top: -40px;
-        left: 7vw;
-        padding-left: 0;
         z-index: 2;
         transition: all .2s;
     }
 
-    .splitMenu {
-        float: right;
-        top: 1px;
-        right: 21vw;
-    }
 
     .menuBar li {
         background-color: white;
         display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
         height: 30px;
-        margin-left: 20px;
         list-style: none;
         position: relative;
         transition: all .2s;
@@ -99,10 +99,9 @@
         border-radius: 3px;
         border: 0;
         width: 40px;
-        height: 39px;
-        float: right;
-        top: -98px;
-        right: 10px;
+        height: 40px;
+        top: 5px;
+        margin-right: 10px;
         position: relative;
         transition: all .2s;
     }
@@ -111,89 +110,93 @@
         background-color: #e0e0e0;
         border-radius: 50%;
     }
+    /*.mainSection {*/
+    /*    display: flex;*/
+    /*    background-color: white;*/
+    /*    position: relative;*/
+    /*    height: 35vw;*/
+    /*    margin: 10px;*/
+    /*    top:-4.13vw;*/
+    /*}*/
+    /*#headLine {*/
+    /*    font-size: 4vw;*/
+    /*    position: relative;*/
+    /*    display: flex;*/
+    /*    width: 30vw;*/
+    /*    top: 5vw;*/
+    /*    left: 45px;*/
+    /*}*/
+
+    /*#buttonsDiv {*/
+    /*    display: inline-block;*/
+    /*    position: relative;*/
+    /*    background-color: white;*/
+    /*    left: 5vw;*/
+    /*    top: -1vw;*/
+    /*}*/
+
+    /*#exploreBtn {*/
+    /*    background-color: #f84c4c;*/
+    /*    color: white;*/
+    /*    font-size: 2vw;*/
+    /*    border-radius: 50px;*/
+    /*    border:0;*/
+    /*    width: 18vw;*/
+    /*    height: 4vw;*/
+    /*    position: relative;*/
+    /*    transition: all .2s;*/
+    /*}*/
+
+    /*#exploreBtn:hover {*/
+    /*    color: black;*/
+    /*    background-color: #9fcc5a;*/
+    /*}*/
+
+    /*#videoBtn {*/
+    /*    background-color: white;*/
+    /*    color: black;*/
+    /*    font-size: 2vw;*/
+    /*    border-radius: 50px;*/
+    /*    border:0;*/
+    /*    width: 18vw;*/
+    /*    height: 4vw;*/
+    /*    position: relative;*/
+    /*    transition: all .2s;*/
+    /*}*/
+
+    /*#videoBtn:hover {*/
+    /*    color: white;*/
+    /*    background-color: grey;*/
+    /*}*/
+
+    /*#iconsDiv {*/
+    /*    display: inline-block;*/
+    /*    position: relative;*/
+    /*    right: 33vw;*/
+    /*    top: 10vw;*/
+    /*}*/
+
+    /*.icons {*/
+    /*    font-size: 2vw;*/
+    /*    display: inline-block;*/
+    /*    padding:1vw;*/
+    /*    margin: auto 0;*/
+    /*}*/
+
+    /*#mainPic {*/
+    /*    width: 45vw;*/
+    /*    height: 30vw;*/
+    /*    position: absolute;*/
+    /*    left: 46vw;*/
+    /*    top: 3vw;*/
+    /*}*/
 }
 
-.mainSection {
-    background-color: white;
-    position: relative;
-    height: 35vw;
-    margin: 10px;
-    top:-4.13vw;
-}
-#headLine {
-    font-size: 5vw;
-    position: relative;;
-    top: 5px;
-    left: 45px;
-}
 
-#buttonsDiv {
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    left: 5vw;
-    top: -7vw;
-}
-
-#exploreBtn {
-    background-color: #f84c4c;
-    color: white;
-    font-size: 2vw;
-    border-radius: 50px;
-    border:0;
-    width: 18vw;
-    height: 4vw;
-    position: relative;
-    transition: all .2s;
-}
-
-#exploreBtn:hover {
-    color: black;
-    background-color: #9fcc5a;
-}
-
-#videoBtn {
-    background-color: white;
-    color: black;
-    font-size: 2vw;
-    border-radius: 50px;
-    border:0;
-    width: 18vw;
-    height: 4vw;
-    position: relative;
-    transition: all .2s;
-}
-
-#videoBtn:hover {
-    color: white;
-    background-color: grey;
-}
-
-#iconsDiv {
-    display: inline-block;
-    position: relative;
-    right: 33vw;
-    top: 5vw;
-}
-
-.icons {
-    font-size: 2vw;
-    display: inline-block;
-    padding:1vw;
-    margin: auto 0;
-}
-
-#mainPic {
-    width: 45vw;
-    height: 30vw;
-    position: absolute;
-    left: 46vw;
-    top: 3vw;
-}
 
 /***********************************************************************************************************************/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     body {
         background-color: #f4ede5;
         font-family: Calibri, serif;
@@ -204,10 +207,13 @@
     }
 
     .header {
-        background-color: white;
-        margin: 10px;
+        background-color: red;
+        display: flex;
         margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         height: 200px;
+        justify-content: space-between;
     }
 
     .barBtn {
@@ -232,12 +238,10 @@
 
     .menuBar {
         text-align: center;
-        display: block;
+        display: flex;
         height: 100%;
         width: 85%;
         position: relative;
-        top: -40px;
-        padding-left: 0;
         z-index: 2;
         transition: all .2s;
     }
@@ -262,15 +266,10 @@
     .subMenu {
         z-index: 2;
         display: none;
-        position: absolute;
-        padding-top: 13px;
-        padding-right: 17px;
-        padding-left: 0;
+        position: relative;
         transition: all .2s;
         width: 120px;
         height: 100px;
-        top: 30px;
-        right: 30%;
         border: 2px solid white;
         border-radius: 2px;
         box-shadow: 0 0 5px grey;
@@ -278,7 +277,7 @@
     }
 
     .menuBar li:hover .subMenu {
-        display: inline;
+        display: flex;
     }
 
     .searchBtn {
@@ -288,10 +287,9 @@
         border-radius: 3px;
         border: 0;
         width: 40px;
-        height: 39px;
-        float: right;
-        top: -245px;
-        right: 10px;
+        height: 40px;
+        top: 5px;
+        margin-right: 10px;
         position: relative;
         transition: all .2s;
     }
