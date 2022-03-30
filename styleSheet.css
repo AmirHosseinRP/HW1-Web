@@ -1,4 +1,4 @@
-@media (orientation: landscape){
+@media (orientation: landscape) and (min-width: 659px){
     body {
         background-color: #f4ede5;
         font-family: Calibri, serif;
@@ -196,7 +196,7 @@
 
 /***********************************************************************************************************************/
 
-@media (orientation: portrait){
+@media (orientation: portrait) , (max-width: 659px){
     body {
         background-color: #f4ede5;
         font-family: Calibri, serif;
