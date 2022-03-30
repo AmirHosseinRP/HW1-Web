@@ -1,99 +1,224 @@
-body {
-    background-color: #f4ede5;
-    font-family: Calibri, serif;
-}
-a {
-    text-decoration: none;
-}
-.header {
-    background-color: white;
-    margin: 10px;
-    margin-top: 20px;
-    height: 50px;
-}
-.barBtn {
-    background-color: white;
-    color: grey;
-    font-size: 10px;
-    border-radius: 3px;
-    border:0;
-    width: 40px;
-    height: 40px;
-    top: 5px;
-    left: 10px;
-    position: relative;
-    transition: all .2s;
-}
-.barBtn a {
-    text-decoration: none;
-}
-.barBtn:hover {
-    background-color: #e0e0e0;
-    border-radius: 50%;
+@media screen and (min-width: 650px){
+    body {
+        background-color: #f4ede5;
+        font-family: Calibri, serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header {
+        background-color: white;
+        margin: 10px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .barBtn {
+        background-color: white;
+        color: grey;
+        font-size: 10px;
+        border-radius: 3px;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        left: 10px;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .barBtn a {
+        text-decoration: none;
+    }
+
+    .barBtn:hover {
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+    .menuBar {
+        display: inline;
+        position: relative;
+        top: -40px;
+        left: 7vw;
+        padding-left: 0;
+        z-index: 2;
+        transition: all .2s;
+    }
+
+    .splitMenu {
+        float: right;
+        top: 1px;
+        right: 21vw;
+    }
+
+    .menuBar li {
+        background-color: white;
+        display: inline-block;
+        height: 30px;
+        margin-left: 20px;
+        list-style: none;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .menuBar li a {
+        font-size: 15px;
+        color: grey;
+        display: block;
+        transition: all .2s;
+    }
+
+    .subMenu {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        padding-top: 13px;
+        padding-right: 17px;
+        padding-left: 0;
+        transition: all .2s;
+        width: 120px;
+        height: 100px;
+        top: 30px;
+        border: 2px solid white;
+        border-radius: 2px;
+        box-shadow: 0 0 5px grey;
+        background-color: white;
+    }
+
+    .menuBar li:hover .subMenu {
+        display: inline;
+    }
+
+    .searchBtn {
+        background-color: white;
+        color: grey;
+        font-size: 10px;
+        border-radius: 3px;
+        border: 0;
+        width: 40px;
+        height: 39px;
+        float: right;
+        top: -98px;
+        right: 10px;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .searchBtn:hover {
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
 }
 
-.menuBar {
-    display: inline;
-    position: relative;
-    top: -40px;
-    left: 250px;
-    padding-left: 0;
-    z-index: 2;
-    transition: all .2s;
-}
-.splitMenu {
-    left: 180px;
-}
-.menuBar li {
-    background-color: white;
-    display: inline-block;
-    height: 30px;
-    margin-left: 20px;
-    list-style: none;
-    position: relative;
-    transition: all .2s;
-}
-.menuBar li a {
-    font-size: 15px;
-    color: grey;
-    display: block;
-    transition: all .2s;
-}
-.subMenu {
-    z-index: 2;
-    display: none;
-    position: absolute;
-    padding-top: 13px;
-    padding-right: 17px;
-    padding-left: 0;
-    transition: all .2s;
-    width: 120px;
-    height: 100px;
-    top:30px;
-    border: 2px solid white;
-    border-radius: 2px;
-    box-shadow: 0 0 5px grey;
-    background-color: white;
-}
-.menuBar li:hover .subMenu {
-    display: inline;
-}
-.searchBtn {
-    background-color: white;
-    color: grey;
-    font-size: 10px;
-    border-radius: 3px;
-    border:0;
-    width: 40px;
-    height: 39px;
-    float: right;
-    top: -98px;
-    right: 10px;
-    position: relative;
-    transition: all .2s;
+@media screen and (max-width: 650px) {
+    body {
+        background-color: #f4ede5;
+        font-family: Calibri, serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header {
+        background-color: white;
+        margin: 10px;
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    .barBtn {
+        background-color: white;
+        color: grey;
+        font-size: 10px;
+        border-radius: 3px;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        left: 10px;
+        position: relative;
+        transition: all .2s;
+        z-index: 3;
+    }
+
+    .barBtn:hover {
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+    .menuBar {
+        text-align: center;
+        display: block;
+        height: 100%;
+        width: 85%;
+        position: relative;
+        top: -40px;
+        padding-left: 0;
+        z-index: 2;
+        transition: all .2s;
+    }
+
+    .menuBar li {
+        background-color: white;
+        display: block;
+        height: 30px;
+        margin-left: 20px;
+        list-style: none;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .menuBar li a {
+        font-size: 15px;
+        color: grey;
+        display: block;
+        transition: all .2s;
+    }
+
+    .subMenu {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        padding-top: 13px;
+        padding-right: 17px;
+        padding-left: 0;
+        transition: all .2s;
+        width: 120px;
+        height: 100px;
+        top: 30px;
+        right: 30%;
+        border: 2px solid white;
+        border-radius: 2px;
+        box-shadow: 0 0 5px grey;
+        background-color: white;
+    }
+
+    .menuBar li:hover .subMenu {
+        display: inline;
+    }
+
+    .searchBtn {
+        background-color: white;
+        color: grey;
+        font-size: 10px;
+        border-radius: 3px;
+        border: 0;
+        width: 40px;
+        height: 39px;
+        float: right;
+        top: -245px;
+        right: 10px;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .searchBtn:hover {
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
 }
 
-.searchBtn:hover {
-    background-color: #e0e0e0;
-    border-radius: 50%;
-}
