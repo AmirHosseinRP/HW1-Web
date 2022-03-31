@@ -100,16 +100,16 @@
     }
 
     #headLine {
-        font-size: 7vw;
+        font-size: 6vw;
         position: relative;
         display:inline;
-        margin: 0 0 0 40px;
+        margin: 0 0 0 30px;
         grid-area: headLine;
     }
     #buttonsDiv {
         position: relative;
         grid-area: buttons;
-        margin-left: 50px;
+        margin-left: 40px;
         margin-top: 10px;
     }
     #exploreBtn {
@@ -145,7 +145,7 @@
     #iconsDiv {
         position: relative;
         grid-area: icons;
-        margin-left: 70px;
+        margin-left: 60px;
     }
     .icons {
         font-size: 1.5vw;
@@ -158,6 +158,75 @@
         margin: 0;
         width: 100%;
         object-fit: cover;
+    }
+
+    .aboutSection {
+        display: grid;
+        /*background-color: red;*/
+        /*position: relative;*/
+        margin: 0 10px 0 10px;
+        grid-template-areas:
+    'picture picture welcome'
+    'picture picture recipe';
+        gap: 40px;
+        background-color: white;
+        padding: 20px;
+    }
+    #aboutPic {
+        grid-area: picture;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    #mainTxt {
+        font-size: 2vw;
+    }
+    #aboutTxt {
+        position: relative;
+        color: #f84c4c;
+        top: 10px;
+    }
+    #welcomeDiv {
+        grid-area: welcome;
+        background-color: white;
+
+    }
+    #recipeDiv {
+        grid-area: recipe;
+        background-color: white;
+    }
+    #recipeDiv {
+        display: grid;
+        grid-template-areas:
+    'text text text'
+    'picture1 picture2 picture3';
+    }
+    #recipeTxt {
+        grid-area: text;
+        background-color: white;
+    }
+    .specialsDiv1 {
+        grid-area: picture1;
+        margin-right: 20px;
+    }
+    .specialsDiv2 {
+        grid-area: picture2;
+        margin-right: 20px;
+    }
+    .specialsDiv3 {
+        grid-area: picture3;
+        margin-right: 20px;
+    }
+    .specialsDiv1 img , .specialsDiv2 img , .specialsDiv3 img {
+        height: 13vw;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    #recipeDiv p {
+        color: #f84c4c;
+        font-size: 1.5vw;
     }
 }
 
@@ -323,5 +392,71 @@
         margin: 0;
         width: 100%;
         object-fit: cover;
+    }
+    .aboutSection {
+        display: grid;
+        margin: 0 10px 0 10px;
+        grid-template-areas:
+    'picture picture welcome'
+    'picture picture recipe';
+        gap: 30px;
+        background-color: white;
+        padding: 20px;
+    }
+    #aboutPic {
+        grid-area: picture;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    #mainTxt {
+        font-size: 3vw;
+    }
+    #aboutTxt {
+        position: relative;
+        color: #f84c4c;
+        top: 10px;
+    }
+    #welcomeDiv {
+        grid-area: welcome;
+        background-color: white;
+
+    }
+    #recipeDiv {
+        grid-area: recipe;
+        background-color: white;
+    }
+    #recipeDiv {
+        display: grid;
+        grid-template-areas:
+    'text text text'
+    'picture1 picture2 picture3';
+    }
+    #recipeTxt {
+        grid-area: text;
+        background-color: white;
+    }
+    .specialsDiv1 {
+        grid-area: picture1;
+        margin-right: 20px;
+    }
+    .specialsDiv2 {
+        grid-area: picture2;
+        margin-right: 20px;
+    }
+    .specialsDiv3 {
+        grid-area: picture3;
+        margin-right: 20px;
+    }
+    .specialsDiv1 img , .specialsDiv2 img , .specialsDiv3 img {
+        height: 13vw;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    #recipeDiv p {
+        color: #f84c4c;
+        font-size: 1.5vw;
     }
 }
