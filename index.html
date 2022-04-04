@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Food Delivery</title>
@@ -92,7 +93,7 @@
     </div>
 </section>
 <section class="specialsSection">
-    <p id="specialTxt" style="color: #f84c4c;position:relative ;top: 3vw">Specialties</p>
+    <p id="specialTxt" style="color: #f84c4c;position:relative ;top: 2vw">Specialties</p>
     <h2 id="specialHeadLine">Special Dishes</h2>
     <div class="beefSpecial">
         <p id="specialNumber1" style="font-size: 7vw">01. <span
@@ -187,5 +188,105 @@
         </div>
     </div>
 </section>
+<article class="customersArticle">
+    <p id="testimonyTxt" style="color: #f84c4c;position:relative ;top: 3vw">Testimony</p>
+    <p id="testimonyHeadLine" style="font-size: 3vw;color: white">Happy Customer</p>
+    <b style="color: white;font-size: 9vw">،،</b>
+    <em style="color: white;font-size: 2.5vw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non
+        doloribus ut, alias doloremque
+        perspiciatis</em>
+    <p style="color: white;font-size: 2vw">Mary Jane</p>
+    <p style="color: white;font-size: 2vw">CTO of <span style="color: #f84c4c">Unidentity Inc</span></p>
+</article>
+<section class="teamSection">
+    <p id="teamTxt" style="color: #f84c4c;position:relative ;top: 3vw">Specialties</p>
+    <h2 id="teamHeadLine" style="font-size: 3vw">Our Menu</h2>
+    <div id="chefsDiv">
+        <div class="chefCard" style="background-image: url('images/chef-1.jpg')">
+            <div>
+                <h1>Aaron Patel</h1>
+                <p>CEO</p>
+            </div>
+        </div>
+        <div class="chefCard" style="background-image: url('images/chef-2.jpg')">
+            <div>
+                <h1>Daniel Tebas</h1>
+                <p>Chef</p>
+            </div>
+        </div>
+        <div class="chefCard" style="background-image: url('images/chef-3.jpg')">
+            <div>
+                <h1>Jon Snow</h1>
+                <p>Chef</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reserveSection">
+    <section id="bookSection">
+        <p id="bookTxt" style="color: #f84c4c;position:relative ;top: 3vw">Reservation</p>
+        <h2 id="bookHeadLine" style="font-size: 3vw">Book Now</h2>
+        <form id="bookForm" action="order_action_page.php">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <br>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <br>
+            <label for="phone"></label>
+            <input type="number" id="phone" name="phone" placeholder="Phone">
+            <br>
+            <label for="date"></label>
+            <input type="date" id="date" name="date" min="2022-01-01" max="2022-12-31">
+            <label for="time"></label>
+            <input type="time" id="time" name="time">
+            <br>
+            <label for="person"></label>
+            <select id="person" name="person">
+                <option value="person" disabled selected>Person</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <textarea name="textarea" rows="10" cols="20"></textarea>
+            <input type="submit" id="submit" value="Send Message">
+        </form>
+    </section>
+</section>
+<footer class="footer">
+    <article id="brand">
+        <img src="images/logo.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo
+            voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
+    </article>
+    <div id="openDays">
+        <h1>Open Hours</h1>
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+        <p>Sunday</p>
+    </div>
+    <div id="openHours">
+        <p>9:00 - 24:00</p>
+        <p>9:00 - 24:00</p>
+        <p>9:00 - 24:00</p>
+        <p>9:00 - 24:00</p>
+        <p>9:00 - 02:00</p>
+        <p>9:00 - 02:00</p>
+        <p>Closed</p>
+    </div>
+    <form id="newsLetter">
+        <h1>NewsLetter</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <label for="newsEmail"></label>
+        <input type="email" id="newsEmail" name="email" placeholder="Enter email">
+        <br>
+        <input type="submit" id="newsSubmit" value="Submit">
+    </form>
+</footer>
 </body>
 </html>

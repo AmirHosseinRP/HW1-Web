@@ -31,6 +31,7 @@
         margin: 5px 10px 0 10px;
         position: relative;
         transition: all .2s;
+        cursor: pointer;
     }
 
     .barBtn:hover, .searchBtn:hover {
@@ -124,11 +125,14 @@
         border: 0;
         position: relative;
         transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
     }
 
     #exploreBtn:hover {
         color: black;
         background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
     }
 
     #videoBtn {
@@ -141,6 +145,8 @@
         border: 0;
         position: relative;
         transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px black;
     }
 
     #videoBtn:hover {
@@ -309,11 +315,14 @@
         height: 3.5vw;
         border: 0;
         transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
     }
 
     #tableBookBtn1:hover {
         color: black;
         background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
     }
 
     #specialImg1 {
@@ -381,11 +390,14 @@
         height: 3.5vw;
         border: 0;
         transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
     }
 
     #tableBookBtn2:hover {
         color: black;
         background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
     }
 
     #specialImg2 {
@@ -420,7 +432,8 @@
     #menuItems {
         display: flex;
         flex-flow: row wrap;
-    }
+        cursor: pointer;
+        }
 
     .menuItem {
         width: 30%;
@@ -462,8 +475,181 @@
         top: -2.5vw;
         right: 1.5vw;
     }
-}
+    .teamSection {
+        margin: 0 10px 0 10px;
+        background-color: white;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #chefsDiv {
+        display: flex;
+        justify-content: space-around;
+    }
+    .chefCard {
+        width: 30vw;
+        height: 50vw;
+        background-size: cover;
+    }
+    .chefCard div {
+        position: relative;
+        top: 40vw;
+        background-color: white;
+        left: 10%;
+        width: 80%;
+    }
+    .chefCard div h1 {
+        position: relative;
+        top: .7vw;
+    }
+    .chefCard div p {
+        position: relative;
+        top: -.8vw;
+    }
+    .reserveSection {
+        background-image: url("images/reservation-bg.jpg");
+        margin: 0 10px 0 10px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #bookSection {
+        background-color: white;
+        width: 35%;
+        position: relative;
+        top: 50px;
+        left: 70px;
+        padding-bottom: 20px;
+        box-shadow: -5px 8px 12px #c5c5c5;
+    }
+    #name, select, #email, #phone, textarea{
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
+    #date, #time{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #submit {
+        width: 40%;
+        background-color: #f84c4c;
+        font-size: 1vw;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 50px;
+        transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
+    }
+
+    #submit:hover {
+        color: black;
+        background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
+    }
+    .footer {
+        margin: 0 10px 0 10px;
+        background-color: white;
+        padding-bottom: 20px;
+        padding-top: 200px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #brand {
+        width: 30%;
+        position: relative;
+        top: 25px;
+        text-align: left;
+    }
+    #brand img {
+        width: 50%;
+    }
+    #brand p {
+        font-size: 1.5vw;
+    }
+    #openDays {
+        text-align: left;
+    }
+    #openHours h1 {
+        font-size: 3vw;
+    }
+    #openDays p {
+        padding:0;
+        margin: 1px;
+        font-size: 1.5vw;
+    }
+    #openHours {
+        text-align: right;
+        position: relative;
+        top:84px;
+        right: 10vw;
+    }
+    #openHours p {
+        padding: 0;
+        margin: 1px;
+        font-size: 1.5vw;
+    }
+    #newsLetter {
+        width: 30%;
+        text-align: left;
+    }
+    #newsLetter h1 {
+        font-size: 3vw;
+    }
+    #newsEmail {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #newsSubmit {
+        width: 90%;
+        background-color: #f84c4c;
+        font-size: 1.5vw;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 50px;
+        transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
+    }
+    #newsSubmit:hover {
+        color: black;
+        background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
+    }
+}
+.customersArticle {
+    background-image: url('images/testi-bg.jpg');
+    margin: 0 10px 0 10px;
+    height: 50vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 /***********************************************************************************************************************/
 
 @media (orientation: portrait) , (max-width: 659px) {
@@ -922,5 +1108,172 @@
         position: relative;
         font-size: 2.5vw;
         top: -4vw;
+    }
+    .teamSection {
+        margin: 0 10px 0 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #chefsDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .chefCard {
+        width: 80%;
+        height: 100vw;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    .chefCard div {
+        position: relative;
+        top: 80vw;
+        background-color: white;
+        left: 10%;
+        width: 80%;
+    }
+    .chefCard div h1 {
+        position: relative;
+        top: 2vw;
+    }
+    .chefCard div p {
+        position: relative;
+        top: -2vw;
+    }
+    .reserveSection {
+        background-image: url("images/reservation-bg.jpg");
+        margin: 0 10px 0 10px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #bookSection {
+        background-color: white;
+        width: 100%;
+        position: relative;
+
+        box-shadow: -5px 8px 12px #c5c5c5;
+    }
+    input[type=text], select, input[type=email], input[type=number], textarea{
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=date], input[type=time]{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 30%;
+        background-color: #f84c4c;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 50px;
+        transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
+    }
+
+    input[type=submit]:hover {
+        color: black;
+        background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
+    }
+    .footer {
+        margin: 0 10px 0 10px;
+        background-color: white;
+        padding-bottom: 20px;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #brand {
+        width: 90%;
+        position: relative;
+        text-align: left;
+        padding-left: 20px;
+    }
+    #brand img {
+        width: 50%;
+    }
+    #brand p {
+        font-size: 4vw;
+    }
+    #openDays {
+        text-align: left;
+        position: relative;
+        padding-left: 20px;
+        top: 10vw;
+    }
+    #openDays p {
+        padding:0;
+        margin: 1px;
+        font-size: 4vw;
+    }
+    #openHours {
+        text-align: right;
+        position: relative;
+        top: -25vw;
+        right: 30vw;
+    }
+    #openHours h1 {
+        font-size: 5vw;
+    }
+    #openHours p {
+        padding: 0;
+        margin: 1px;
+        font-size: 4vw;
+    }
+    #newsLetter {
+        width: 90%;
+        padding-left: 20px;
+        text-align: left;
+    }
+    #newsLetter p {
+        font-size: 3vw;
+    }
+    #newsEmail {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #newsSubmit {
+        width: 90%;
+        background-color: #f84c4c;
+        font-size: 3vw;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 50px;
+        transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 10px #f84c4c;
+    }
+    #newsSubmit:hover {
+        color: black;
+        background-color: #9fcc5a;
+        box-shadow: 0 0 10px #9fcc5a;
     }
 }
