@@ -13,22 +13,22 @@
     <nav class="menuBar">
         <ul>
             <li>
-                <a href="#link1">Home</a>
+                <a href="#mainSection">Home</a>
             </li>
             <li>
-                <a href="#link2">About</a>
+                <a href="#aboutSection">About</a>
             </li>
             <li>
-                <a href="#link3">Special Dishes <i class="fa fa-caret-down"></i></a>
+                <a href="#specialsSection">Special Dishes <i class="fa fa-caret-down"></i></a>
                 <ul class="subMenu">
                     <li>
-                        <a href="#link3-1">Beef Steak</a>
+                        <a href="#beefSpecial">Beef Steak</a>
                     </li>
                     <li>
-                        <a href="#link3-2">Sauce</a>
+                        <a href="#beefSpecial">Sauce</a>
                     </li>
                     <li>
-                        <a href="#link3-3">Salmon Zucchini</a>
+                        <a href="#salmonSpecial">Salmon Zucchini</a>
                     </li>
                 </ul>
             </li>
@@ -37,19 +37,19 @@
     <nav class="menuBar">
         <ul>
             <li>
-                <a href="#link4">Menu</a>
+                <a href="#menuSection">Menu</a>
             </li>
             <li>
-                <a href="#link5">Team</a>
+                <a href="#teamSection">Team</a>
             </li>
             <li>
-                <a href="#link6">Reservation</a>
+                <a href="#reserveSection">Reservation</a>
             </li>
         </ul>
     </nav>
     <button class="searchBtn"><i class="fa fa-search"></i></button>
 </header>
-<section class="mainSection">
+<section class="mainSection" id="mainSection">
     <h1 id="headLine">We Love <br>Delicious Foods!</h1>
     <dev id="buttonsDiv">
         <button id="exploreBtn">Explore Menu</button>
@@ -65,7 +65,7 @@
     </div>
     <img id="mainPic" src="images/hero-1.jpg">
 </section>
-<section class="aboutSection">
+<section class="aboutSection" id="aboutSection">
     <img id="aboutPic" src="images/hero-2.jpg">
     <div id="welcomeDiv">
         <p id="aboutTxt">About</p>
@@ -92,10 +92,10 @@
         </div>
     </div>
 </section>
-<section class="specialsSection">
+<section class="specialsSection" id="specialsSection">
     <p id="specialTxt" style="color: #f84c4c;position:relative ;top: 2vw">Specialties</p>
     <h2 id="specialHeadLine">Special Dishes</h2>
-    <div class="beefSpecial">
+    <div class="beefSpecial" id="beefSpecial">
         <p id="specialNumber1" style="font-size: 7vw">01. <span
                 style="font-size: 2vw;letter-spacing: -0.5px;position: relative;top: -2vw">__________________</span>
         </p>
@@ -108,7 +108,7 @@
         <button id="tableBookBtn1">Book A Table</button>
         <img id="specialImg1" src="images/steak.jpg">
     </div>
-    <div class="salmonSpecial">
+    <div class="salmonSpecial" id="salmonSpecial">
         <p id="specialNumber2" style="font-size: 7vw">02. <span
                 style="font-size: 2vw;letter-spacing: -0.5px;position: relative;top: -2vw">__________________</span>
         </p>
@@ -121,7 +121,7 @@
         <img id="specialImg2" src="images/salmon-zucchini.jpg">
     </div>
 </section>
-<section class="menuSection">
+<section class="menuSection" id="menuSection">
     <p id="menuTxt" style="color: #f84c4c;position:relative ;top: 3vw">Specialties</p>
     <h2 id="menuHeadLine" style="font-size: 3vw">Our Menu</h2>
     <div id="menuHeadRow" style="margin-bottom: 30px">
@@ -198,7 +198,7 @@
     <p style="color: white;font-size: 2vw">Mary Jane</p>
     <p style="color: white;font-size: 2vw">CTO of <span style="color: #f84c4c">Unidentity Inc</span></p>
 </article>
-<section class="teamSection">
+<section class="teamSection" id="teamSection">
     <p id="teamTxt" style="color: #f84c4c;position:relative ;top: 3vw">Specialties</p>
     <h2 id="teamHeadLine" style="font-size: 3vw">Our Menu</h2>
     <div id="chefsDiv">
@@ -222,7 +222,7 @@
         </div>
     </div>
 </section>
-<section class="reserveSection">
+<section class="reserveSection" id="reserveSection">
     <section id="bookSection">
         <p id="bookTxt" style="color: #f84c4c;position:relative ;top: 3vw">Reservation</p>
         <h2 id="bookHeadLine" style="font-size: 3vw">Book Now</h2>
