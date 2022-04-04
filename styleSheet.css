@@ -102,16 +102,18 @@
     #headLine {
         font-size: 6vw;
         position: relative;
-        display:inline;
+        display: inline;
         margin: 0 0 0 30px;
         grid-area: headLine;
     }
+
     #buttonsDiv {
         position: relative;
         grid-area: buttons;
         margin-left: 40px;
         margin-top: 10px;
     }
+
     #exploreBtn {
         background-color: #f84c4c;
         color: white;
@@ -119,14 +121,16 @@
         border-radius: 50px;
         width: 40%;
         height: 4vw;
-        border:0;
+        border: 0;
         position: relative;
         transition: all .2s;
     }
+
     #exploreBtn:hover {
         color: black;
         background-color: #9fcc5a;
     }
+
     #videoBtn {
         background-color: white;
         color: black;
@@ -134,24 +138,28 @@
         border-radius: 50px;
         width: 40%;
         height: 4vw;
-        border:0;
+        border: 0;
         position: relative;
         transition: all .2s;
     }
+
     #videoBtn:hover {
         color: white;
         background-color: grey;
     }
+
     #iconsDiv {
         position: relative;
         grid-area: icons;
         margin-left: 60px;
     }
+
     .icons {
         font-size: 1.5vw;
         display: inline-block;
         margin-left: 30px;
     }
+
     #mainPic {
         grid-area: picture;
         height: 33vw;
@@ -162,8 +170,6 @@
 
     .aboutSection {
         display: grid;
-        /*background-color: red;*/
-        /*position: relative;*/
         margin: 0 10px 0 10px;
         grid-template-areas:
     'picture picture welcome'
@@ -172,6 +178,7 @@
         background-color: white;
         padding: 20px;
     }
+
     #aboutPic {
         grid-area: picture;
         height: 100%;
@@ -179,57 +186,283 @@
         width: 100%;
         object-fit: cover;
     }
+
     #mainTxt {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
+
     #aboutTxt {
         position: relative;
         color: #f84c4c;
         top: 10px;
     }
+
     #welcomeDiv {
         grid-area: welcome;
         background-color: white;
 
     }
+
     #recipeDiv {
         grid-area: recipe;
         background-color: white;
     }
+
     #recipeDiv {
         display: grid;
         grid-template-areas:
     'text text text'
     'picture1 picture2 picture3';
     }
+
     #recipeTxt {
         grid-area: text;
         background-color: white;
     }
+
     .specialsDiv1 {
         grid-area: picture1;
         margin-right: 20px;
     }
+
     .specialsDiv2 {
         grid-area: picture2;
         margin-right: 20px;
     }
+
     .specialsDiv3 {
         grid-area: picture3;
         margin-right: 20px;
     }
-    .specialsDiv1 img , .specialsDiv2 img , .specialsDiv3 img {
+
+    .specialsDiv1 img, .specialsDiv2 img, .specialsDiv3 img {
         height: 13vw;
         margin: 0;
         width: 100%;
         object-fit: cover;
     }
+
     #recipeDiv p {
         color: #f84c4c;
         font-size: 1.5vw;
     }
-}
 
+    .specialsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f7f8f9;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
+
+    .beefSpecial {
+        display: grid;
+        grid-template-areas:
+    'number picture'
+    'headLine picture'
+    'paragraph picture'
+    'price picture'
+    'button picture';
+    }
+
+    #specialNumber1 {
+        grid-area: number;
+        /*background-color: blue;*/
+        position: relative;
+        right: 5vw;
+    }
+
+    #specialName1 {
+        grid-area: headLine;
+        font-size: 3vw;
+        /*background-color: red;*/
+        position: relative;
+        top: -6vw;
+    }
+
+    #specialParagraph1 {
+        grid-area: paragraph;
+        font-size: 1.5vw;
+        width: 30vw;
+        /*background-color: purple;*/
+        position: relative;
+        top: -6vw;
+    }
+
+    #specialPrice1 {
+        grid-area: price;
+        position: relative;
+        font-size: 3vw;
+        top: -6vw;
+    }
+
+    #tableBookBtn1 {
+        background-color: #f84c4c;
+        grid-area: button;
+        position: relative;
+        top: -6vw;
+        color: white;
+        font-size: 1.5vw;
+        border-radius: 50px;
+        width: 50%;
+        height: 3.5vw;
+        border: 0;
+        transition: all .2s;
+    }
+
+    #tableBookBtn1:hover {
+        color: black;
+        background-color: #9fcc5a;
+    }
+
+    #specialImg1 {
+        grid-area: picture;
+        width: 90%;
+        height: 50vw;
+        margin-left: 30%;
+        position: relative;
+        top: 5vw;
+    }
+
+    .salmonSpecial {
+        display: grid;
+        grid-template-areas:
+    'picture number'
+    'picture headLine'
+    'picture paragraph'
+    'picture price'
+    'picture button';
+    }
+
+    #specialNumber2 {
+        grid-area: number;
+        /*background-color: blue;*/
+        position: relative;
+    }
+
+    #specialName2 {
+        grid-area: headLine;
+        font-size: 3vw;
+        /*background-color: red;*/
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #specialParagraph2 {
+        grid-area: paragraph;
+        font-size: 1.5vw;
+        width: 30vw;
+        /*background-color: purple;*/
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #specialPrice2 {
+        grid-area: price;
+        position: relative;
+        font-size: 3vw;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #tableBookBtn2 {
+        background-color: #f84c4c;
+        grid-area: button;
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+        color: white;
+        font-size: 1.5vw;
+        border-radius: 50px;
+        width: 50%;
+        height: 3.5vw;
+        border: 0;
+        transition: all .2s;
+    }
+
+    #tableBookBtn2:hover {
+        color: black;
+        background-color: #9fcc5a;
+    }
+
+    #specialImg2 {
+        grid-area: picture;
+        position: relative;
+        top: 5vw;
+        width: 90%;
+        height: 50vw;
+        margin-right: 30%;
+        right: 5vw;
+    }
+
+    .menuSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
+
+    #menuHeadRow {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuHeader {
+        padding: 0 10vw 0 10vw;
+        font-size: 2.5vw;
+    }
+
+    #menuItems {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .menuItem {
+        width: 30%;
+        height: 8vw;
+        position: relative;
+        left: 2vw;
+        padding: 0;
+        display: grid;
+        column-gap: 0;
+        grid-template-areas:
+    'picture name price'
+    'picture caption price';
+        border-radius: 70px;
+    }
+    .menuItem img {
+        grid-area: picture;
+        border-radius: 50%;
+        width: 45%;
+        position: relative;
+        left: 5vw;
+    }
+    .menuItem h3 {
+        grid-area: name;
+        position: relative;
+        font-size: 1.5vw;
+        top: -0.5vw;
+        right: 1.5vw;
+    }
+    .menuItem h4 {
+        grid-area: price;
+        font-size: 2vw;
+        position: relative;
+        top: -1.5vw;
+    }
+    .menuItem p {
+        grid-area: caption;
+        position: relative;
+        font-size: 1.5vw;
+        top: -2.5vw;
+        right: 1.5vw;
+    }
+}
 
 /***********************************************************************************************************************/
 
@@ -336,16 +569,18 @@
     #headLine {
         font-size: 7vw;
         position: relative;
-        display:inline;
+        display: inline;
         margin: 0 0 0 10px;
         grid-area: headLine;
     }
+
     #buttonsDiv {
         position: relative;
         grid-area: buttons;
         margin-left: 20px;
         margin-top: 5px;
     }
+
     #exploreBtn {
         background-color: #f84c4c;
         color: white;
@@ -353,14 +588,16 @@
         border-radius: 50px;
         width: 40%;
         height: 4vw;
-        border:0;
+        border: 0;
         position: relative;
         transition: all .2s;
     }
+
     #exploreBtn:hover {
         color: black;
         background-color: #9fcc5a;
     }
+
     #videoBtn {
         background-color: white;
         color: black;
@@ -368,24 +605,28 @@
         border-radius: 50px;
         width: 40%;
         height: 4vw;
-        border:0;
+        border: 0;
         position: relative;
         transition: all .2s;
     }
+
     #videoBtn:hover {
         color: white;
         background-color: grey;
     }
+
     #iconsDiv {
         position: relative;
         grid-area: icons;
         margin-left: 30px;
     }
+
     .icons {
         font-size: 1.5vw;
         display: inline-block;
         margin-right: 30px;
     }
+
     #mainPic {
         grid-area: picture;
         height: 37vw;
@@ -393,6 +634,7 @@
         width: 100%;
         object-fit: cover;
     }
+
     .aboutSection {
         display: grid;
         margin: 0 10px 0 10px;
@@ -403,6 +645,7 @@
         background-color: white;
         padding: 20px;
     }
+
     #aboutPic {
         grid-area: picture;
         height: 100%;
@@ -410,53 +653,274 @@
         width: 100%;
         object-fit: cover;
     }
+
     #mainTxt {
-        font-size: 3vw;
+        font-size: 2vw;
     }
+
     #aboutTxt {
         position: relative;
         color: #f84c4c;
         top: 10px;
     }
+
     #welcomeDiv {
         grid-area: welcome;
         background-color: white;
 
     }
+
     #recipeDiv {
         grid-area: recipe;
         background-color: white;
     }
+
     #recipeDiv {
         display: grid;
         grid-template-areas:
     'text text text'
     'picture1 picture2 picture3';
     }
+
     #recipeTxt {
         grid-area: text;
         background-color: white;
     }
+
     .specialsDiv1 {
         grid-area: picture1;
         margin-right: 20px;
     }
+
     .specialsDiv2 {
         grid-area: picture2;
         margin-right: 20px;
     }
+
     .specialsDiv3 {
         grid-area: picture3;
         margin-right: 20px;
     }
-    .specialsDiv1 img , .specialsDiv2 img , .specialsDiv3 img {
+
+    .specialsDiv1 img, .specialsDiv2 img, .specialsDiv3 img {
         height: 13vw;
         margin: 0;
         width: 100%;
         object-fit: cover;
     }
+
     #recipeDiv p {
         color: #f84c4c;
         font-size: 1.5vw;
+    }
+
+    .specialsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f7f8f9;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
+
+    .beefSpecial {
+        display: grid;
+        grid-template-areas:
+    'number picture'
+    'headLine picture'
+    'paragraph picture'
+    'price picture'
+    'button picture';
+    }
+
+    #specialNumber1 {
+        grid-area: number;
+        /*background-color: blue;*/
+        position: relative;
+        right: 5vw;
+    }
+
+    #specialName1 {
+        grid-area: headLine;
+        font-size: 3vw;
+        /*background-color: red;*/
+        position: relative;
+        top: -6vw;
+    }
+
+    #specialParagraph1 {
+        grid-area: paragraph;
+        font-size: 2vw;
+        width: 30vw;
+        /*background-color: purple;*/
+        position: relative;
+        top: -6vw;
+    }
+
+    #specialPrice1 {
+        grid-area: price;
+        position: relative;
+        font-size: 3vw;
+        top: -6vw;
+    }
+
+    #tableBookBtn1 {
+        background-color: #f84c4c;
+        grid-area: button;
+        position: relative;
+        top: -6vw;
+        color: white;
+        font-size: 1.5vw;
+        border-radius: 50px;
+        width: 50%;
+        height: 3.5vw;
+        border: 0;
+        transition: all .2s;
+    }
+
+    #tableBookBtn1:hover {
+        color: black;
+        background-color: #9fcc5a;
+    }
+
+    #specialImg1 {
+        grid-area: picture;
+        width: 90%;
+        height: 55vw;
+        margin-left: 20%;
+        position: relative;
+        top: 5vw;
+    }
+
+    .salmonSpecial {
+        display: grid;
+        grid-template-areas:
+    'picture number'
+    'picture headLine'
+    'picture paragraph'
+    'picture price'
+    'picture button';
+    }
+
+    #specialNumber2 {
+        grid-area: number;
+        /*background-color: blue;*/
+        position: relative;
+    }
+
+    #specialName2 {
+        grid-area: headLine;
+        font-size: 3vw;
+        /*background-color: red;*/
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #specialParagraph2 {
+        grid-area: paragraph;
+        font-size: 2vw;
+        width: 30vw;
+        /*background-color: purple;*/
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #specialPrice2 {
+        grid-area: price;
+        position: relative;
+        font-size: 3vw;
+        top: -6vw;
+        left: 5vw;
+    }
+
+    #tableBookBtn2 {
+        background-color: #f84c4c;
+        grid-area: button;
+        position: relative;
+        top: -6vw;
+        left: 5vw;
+        color: white;
+        font-size: 1.5vw;
+        border-radius: 50px;
+        width: 50%;
+        height: 3.5vw;
+        border: 0;
+        transition: all .2s;
+    }
+
+    #tableBookBtn2:hover {
+        color: black;
+        background-color: #9fcc5a;
+    }
+
+    #specialImg2 {
+        grid-area: picture;
+        position: relative;
+        top: 5vw;
+        width: 90%;
+        height: 55vw;
+        margin-right: 30%;
+        right: 5vw;
+    }
+    .menuSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
+
+    #menuHeadRow {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuHeader {
+        padding: 0 10vw 0 10vw;
+        font-size: 2.5vw;
+    }
+
+    #menuItems {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .menuItem {
+        width: 30%;
+        padding: 0 0 0 3vw;
+        position: relative;
+        left: 1vw;
+        display: grid;
+        column-gap: 0;
+        grid-template-areas:
+    'picture picture'
+    'name price'
+    'caption price';
+    }
+    .menuItem img {
+        grid-area: picture;
+        border-radius: 50%;
+        width: 50%;
+        position: relative;
+    }
+    .menuItem h3 {
+        grid-area: name;
+        position: relative;
+        font-size: 2.5vw;
+    }
+    .menuItem h4 {
+        grid-area: price;
+        font-size: 4vw;
+        position: relative;
+        top: -2vw;
+    }
+    .menuItem p {
+        grid-area: caption;
+        position: relative;
+        font-size: 2.5vw;
+        top: -4vw;
     }
 }
